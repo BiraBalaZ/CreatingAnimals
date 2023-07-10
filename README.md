@@ -1,0 +1,1 @@
+A friend, who is teaching me Classes and Objects in Python, passed to me a homework, in which I have to develop a program to create animals, like Aerials, Aquatics and Terrestrials. And I am using this to practice versioning with Git and my engish too, so, sorry for my errors hahaha.

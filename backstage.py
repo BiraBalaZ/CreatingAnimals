@@ -11,6 +11,6 @@ class CreateAnimal:
     # Criando um animal de fato
     def generatingAnimal(self):
         if (self.legs != 'Undefined'):
-            return f'O Animal em questão tem {self.legs} patas, tem temperamento "{self.temperament}", tem tamanho "{self.size}" e é do tipo "{self.type}"\nDescrição: {self.description}\n'
+            return f'This animal has {self.legs} paws, has an {self.temperament} temperament, and he is {self.size} in his size and the "{self.type} type"\nDescription: {self.description}\n'
         else:
-            return f'O Animal em questão não possui patas, tem temperamento "{self.temperament}", tem tamanho "{self.size}" e é do tipo "{self.type}"\nDescrição: {self.description}\n'
+            return f'This animal do not have paws, has an {self.temperament} temperament, his is {self.size} and his type is "{self.type}"\nDescription: {self.description}\n'

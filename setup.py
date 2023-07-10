@@ -11,3 +11,8 @@ print(CreateAnimal.generatingAnimal(shark))
 # criando um passaro (Tucano)
 dragon = CreateAnimal('Big', 'Agressive', 'Aerial', 4, 'A terrible creature')
 print(CreateAnimal.generatingAnimal(dragon))
+
+
+print(dog.__class__.__name__)
+print(shark.__class__.__name__)
+print(dragon.__class__.__name__)
