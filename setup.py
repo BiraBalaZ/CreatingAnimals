@@ -1,20 +1,47 @@
-from backstage import CreateAnimal
+from random import randint
+from backstage import Quadruped, Aquatic, Aerial
+
+choice = randint(1, 3)
 
 # Creating an terrestrial animal
-dog = CreateAnimal('Small', 'Passive', 'Terrestrial', 4, 'The best man´s friend')
-print(CreateAnimal.generatingAnimal(dog))
+dog = Quadruped(
+    name='Alice',
+    size='Small', 
+    temperament='Passive',
+    animal_type='Terrestrial',
+    paws=4,
+    description='The best man´s friend'
+)
+print(dog)
 
-snake = CreateAnimal('Big', 'Neutral', 'Terrestrial', 0, 'Venomous')
-print(CreateAnimal.generatingAnimal(snake))
+# Sorteando ação do cachorro
+if (choice == 1):
+    Quadruped.walking(dog)
+elif (choice == 2):
+    Quadruped.running(dog)
+elif (choice == 3):
+    Quadruped.sleeping(dog)
 
 # Creating an aquatic animal
-shark = CreateAnimal('Medium', 'Neutral', 'Aquatic', 0, 'Sharks do not watch very well, be carefull')
-print(CreateAnimal.generatingAnimal(shark))
+shark = Aquatic(
+    name='Bruce',
+    size='Medium',
+    temperament='Neutral',
+    animal_type='Aquatic',
+    description='Sharks do not watch very well, be carefull'
+)
+print(shark)
+Aquatic.swimming(shark)
 
 # Creating an aerial animal
-dragon = CreateAnimal('Big', 'Agressive', 'Aerial', 4, 'A terrible creature')
-print(CreateAnimal.generatingAnimal(dragon))
-
-# Creating an hybrid animal
-duck = CreateAnimal('Small', 'Passive', 'Hybrid', 2, 'Just a duck...')
-print(CreateAnimal.generatingAnimal(duck))
+dragon = Aerial(
+    name='Ancient Dragon',
+    size='Big',
+    temperament='Agressive',
+    animal_type='Aerial',
+    paws=2,
+    wings=2,
+    description='A terrible creature'
+)
+print(dragon)
+Aerial.flying(dragon)
