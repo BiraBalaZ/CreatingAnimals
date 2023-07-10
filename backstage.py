@@ -1,11 +1,12 @@
 class CreateAnimal:
-    def __init__(self, size, temperament, type, legs='Undefined', breeds ='Undefined'):
+    def __init__(self, size, temperament, type, legs='Undefined', description ='Undefined'):
 
         # Iniciando um animal        
         self.size = size
         self.temperament = temperament
         self.type = type
         self.legs = legs
+        self.description = description
 
     def generatingAnimal(self):
         if (self.legs != 'Undefined' or self.legs == 0):
