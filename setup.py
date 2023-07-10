@@ -1,18 +1,20 @@
 from backstage import CreateAnimal
 
-# Criando um cachorro
+# Creating an terrestrial animal
 dog = CreateAnimal('Small', 'Passive', 'Terrestrial', 4, 'The best man´s friend')
 print(CreateAnimal.generatingAnimal(dog))
 
-# Criando um peixe (Dourado)
-shark = CreateAnimal('Medium', 'Neutral', 'Aquatic', 'Undefined', 'Sharks do not watch very well, be carefull')
+snake = CreateAnimal('Big', 'Neutral', 'Terrestrial', 0, 'Venomous')
+print(CreateAnimal.generatingAnimal(snake))
+
+# Creating an aquatic animal
+shark = CreateAnimal('Medium', 'Neutral', 'Aquatic', 0, 'Sharks do not watch very well, be carefull')
 print(CreateAnimal.generatingAnimal(shark))
 
-# criando um passaro (Tucano)
+# Creating an aerial animal
 dragon = CreateAnimal('Big', 'Agressive', 'Aerial', 4, 'A terrible creature')
 print(CreateAnimal.generatingAnimal(dragon))
 
-
-print(dog.__class__.__name__)
-print(shark.__class__.__name__)
-print(dragon.__class__.__name__)
+# Creating an hybrid animal
+duck = CreateAnimal('Small', 'Passive', 'Hybrid', 2, 'Just a duck...')
+print(CreateAnimal.generatingAnimal(duck))
