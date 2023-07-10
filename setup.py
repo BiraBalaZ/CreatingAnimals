@@ -1,8 +1,13 @@
 from backstage import CreateAnimal
 
-genericFish = CreateAnimal('small', 'passive', 'Aquatic')
-genericDog = CreateAnimal('medium', 'passive', 'Terrestrial', 4)
+# Criando um cachorro
+dog = CreateAnimal('Medium', 'Neutral', 'Terrestrial', 4, 'Lulu da Pomerânia')
+print(CreateAnimal.generatingAnimal(dog))
 
-print(genericFish)
-print(genericDog)
+# Criando um peixe
+goldfish = CreateAnimal('Small', 'Passive', 'Aquatic')
+print(CreateAnimal.generatingAnimal(goldfish))
 
+# criando um passaro
+toucan = CreateAnimal('Big', 'Agressive', 'Aerial')
+print(CreateAnimal.generatingAnimal(toucan))

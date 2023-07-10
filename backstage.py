@@ -1,14 +1,14 @@
 class CreateAnimal:
+    def __init__(self, size, temperament, type, legs='Undefined', breeds ='Undefined'):
 
-    # Iniciando um animal
-    def __init__(self, size, temperament, type, legs=None):
-        self.type = type
-        self.legs = legs
+        # Iniciando um animal        
         self.size = size
         self.temperament = temperament
+        self.type = type
+        self.legs = legs
 
-    def criar(self, size, temperament, type, legs = None):
-        if (self.legs != None):
-            return f'O Animal em questão tem {self.legs} patas, tem temperamento {self.temperament}, tem tamanho {self.size} e é do tipo {self.type}'
+    def generatingAnimal(self):
+        if (self.legs != 'Undefined' or self.legs == 0):
+            return f'O Animal em questão tem {self.legs} patas, tem temperamento "{self.temperament}", tem tamanho "{self.size}" e é do tipo "{self.type}"'
         else:
-            return f'O Animal em questão tem temperamento {self.temperament}, tem tamanho {self.size} e é do tipo {self.type}'
+            return f'O Animal em questão não possui patas, tem temperamento "{self.temperament}", tem tamanho "{self.size}" e é do tipo "{self.type}"'
